@@ -4,3 +4,4 @@
 - The sensor is placed at the end of the track and directed to the ball’s movement path. The servo motor is placed on a base under the track and is connected to it by a stick and flex joints to get the ability to move the track up and down until the ball returns to its position on the track.
 - The ball’s distance is fed into a proportional-integral-derivative (PID) controller, which has been programmed into the Arduino. The system shall compare this distance (ball’s position) with a predetermined position to find the error. Thus, the PID compensates for this error immediately.
 - The Kp, Ki, and Kd are gains were tuned manually to operate the controller correctly. The tunning is done using the Joystick module
+- Two Simulink codes were created, one for receiver and one for transmitter. The transmitter contains the main PID code that does the balancing and the receiver shows the response of the system via serial communication 
